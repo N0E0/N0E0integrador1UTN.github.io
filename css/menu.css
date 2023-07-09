@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 225, 196);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+header{
+    display: flex;
+    background-color: rgb(255, 181, 132);
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    
+}
+.logo{
+    width: 100px;
+    padding-top: 10px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 181, 132);
+    padding-top: 11px;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+header nav ul li{
+    display: flex;
+    padding: 0 30px;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: large;
+    color: -webkit-link;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+section img{
+    width: 400px;
+    margin-top: 20px;
+}
+section p{
+    text-align: center;
+    width: 400px;
+    margin-top: 10px;
+}
+footer{
+    background-color:  rgb(255, 181, 132) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:10px ;
+    width: 100%;
+    
+}
+footer p{
+    color: black;
+}
+footer ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    margin-right: 10px;
+}
+footer ul li a img{
+    margin-top: 20px;
+    width: 40px;
+}
+
+.redessociales{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.redes{
+    width: 50px;
+}
+
+#secciondelcarrusel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 600px;
+    margin-top: 10px;
+} 
+div h5, p{
+    color: rgb(255, 255, 255) ;
+}
+
+.carousel-caption{
+    background-color: rgba(63, 58, 56, 0.425);
+}
+@media screen and (max-width:719px) { 
+    
+    header{
+     align-items: center;
+     flex-direction: column;
+    }
+ 
+    header nav{
+     justify-content: center;
+     margin-bottom: 2rem;
+    }
+ 
+    header div{
+     padding-right: 40px;
+    }
+    section img{
+     width: 200px;
+    }
+    
+ }
+ @media screen and (max-width:375px) {    
+     header{
+         align-items: center;
+         flex-direction: column;
+         width: 360px;
+        }
+     
+        header nav{
+         width: 100%;
+         justify-content: center;
+         margin-bottom: 2rem;
+        }
+        header nav ul li{
+         padding: 0 15px;
+         width: 100%;
+         }
+        
+        header div{
+         padding: 0;
+         width: 100%;
+        }
+        section img{
+         width: 250px;
+        }
+        section p{
+         width: 300px;
+        }
+        #secciondelcarrusel{
+            width: 300px;
+        }
+        footer{
+            margin-top: 100%;
+        }
+ }
